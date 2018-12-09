@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idm:StateMachine
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:idm="http://www.example.org/idm"
+    xsi:schemaLocation="http://www.example.org/idm idm.ecore">
+  <state name="on"
+      from="//@transition.1"
+      to="//@transition.0"/>
+  <state name="off"
+      from="//@transition.0"
+      to="//@transition.1"/>
+  <transition
+      name="StateOnToStateOff"
+      outgoing="//@state.1"
+      incoming="//@state.0"/>
+  <transition
+      name="StateOffToStateOn"
+      outgoing="//@state.0"
+      incoming="//@state.1"/>
+</idm:StateMachine>

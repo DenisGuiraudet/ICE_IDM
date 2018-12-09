@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated idm -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="idm.presentation.IdmModelWizardID"
+            name="%_UI_IdmModelWizard_label"
+            class="idm.presentation.IdmModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/IdmModelFile.gif">
+         <description>%_UI_IdmModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated idm -->
+      <editor
+            id="idm.presentation.IdmEditorID"
+            name="%_UI_IdmEditor_label"
+            icon="icons/full/obj16/IdmModelFile.gif"
+            extensions="idm"
+            class="idm.presentation.IdmEditor"
+            contributorClass="idm.presentation.IdmActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
